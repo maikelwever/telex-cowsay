@@ -1,0 +1,9 @@
+{
+    "name": "Cowsay",
+    "description": "Renders text in a PIL generated image with monospace text. Also includes cowsay and tux ascii art to render text in.",
+    "version": "1.0",
+    "default_enable": ["Cowsay"],
+    "homepage": "https://github.com/maikelwever/telex-cowsay",
+    "repo": "https://github.com/maikelwever/telex-cowsay.git",
+    "branch": "master"
+}

@@ -1,0 +1,9 @@
+[Core]
+Name = Cowsay
+Module = cowsay
+
+[Documentation]
+Author = Maikel Wever
+Version = 1.0
+Website = https://github.com/maikelwever/telex-cowsay
+Description = Renders text in a PIL generated image with monospace text. Also includes cowsay and tux ascii art to render text in.

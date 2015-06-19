@@ -48,7 +48,7 @@ class CowsayPlugin(plugin.TelexPlugin):
         .--.
        |o_o |
        |:_/ |
-      //   \ \
+      //   \ \\
      (|     | )
     /'\_   _/`\\
     \___)=(___/)

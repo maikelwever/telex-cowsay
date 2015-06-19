@@ -15,13 +15,11 @@ class CowsayPlugin(plugin.TelexPlugin):
     """
 
     patterns = {
-        "^{prefix}monospace (.+)$": "monospace",
         "^{prefix}cowsay (.+)$": "cowsay",
         "^{prefix}tuxsay (.+)$": "tuxsay",
     }
 
     usage = [
-        "{prefix}monospace (text): Renders text in an image with monospace font.",
         "{prefix}cowsay (text): Renders text in an cowsay image with monospace font.",
         "{prefix}tuxsay (text): Renders text in an cowsay -f tux image with monospace font.",
     ]
@@ -119,10 +117,6 @@ class CowsayPlugin(plugin.TelexPlugin):
                 return "Cowsay: something went wrong."
 
         tgl.send_photo(peer, filename, cleanup_cb)
-
-    def monospace(self, msg, matches):
-        text = matches.group(1)
-        self.text2png(msg, text)
 
     def cowsay(self, msg, matches):
         text = matches.group(1)

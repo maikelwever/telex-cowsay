@@ -107,7 +107,7 @@ class CowsayPlugin(plugin.TelexPlugin):
             draw.text((leftpadding, y), line, color, font=font)
             y += line_height
 
-        filename = mkstemp(suffix='png', prefix="telex-cowsayplugin-")
+        filename = mkstemp(suffix='.png', prefix="telex-cowsayplugin-")
         img.save(filename, 'png')
 
         peer = self.bot.get_peer_to_send(msg)

@@ -95,6 +95,9 @@ class CowsayPlugin(plugin.TelexPlugin):
             if line.strip() != '':
                 lines += wrap(line, width, break_long_words=True, replace_whitespace=False)
 
+        while len(lines) < 5:
+            lines.append(' ')
+
         line_height = font.getsize(text)[1]
         img_height = line_height * (len(lines) + 1)
         width = ((width + 10) * line_height) // 2

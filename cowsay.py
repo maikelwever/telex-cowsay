@@ -88,7 +88,8 @@ class CowsayPlugin(plugin.TelexPlugin):
 
     def text2png(self, msg, text, color="#888", bgcolor="#000", fontfullpath=None, fontsize=14,
                  leftpadding=3, rightpadding=3, width=80):
-        font = ImageFont.truetype(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'droidsansmono.otf'), fontsize)
+        font = ImageFont.truetype(
+            os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sourcecodepro.otf'), fontsize)
 
         lines = []
         for line in text.splitlines():
